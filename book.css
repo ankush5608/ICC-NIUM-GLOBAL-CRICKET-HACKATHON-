@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #000;
+    color: #fff;
+    min-height: 200vh;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 80px;
+    z-index: 100000;
+    background-color: black;
+    opacity: 0.4;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+}
+
+nav .logos{
+    text-transform: uppercase;
+    Letter-spacing: 2px;
+    transition: 0.6s;
+    font-size: 2em;
+    position: relative;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+nav ul{
+    overflow: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    display: relative;
+    list-style: none;
+    font-size: 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    position: relative;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+nav ul li a:hover{
+    background-color: white; 
+    text-decoration: underline;
+    color: #fff;
+    color: black; 
+}
+
+.banner
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(images/virat-kohli-and-alex-carey.-1579133243_1352x900.jpg);
+    background-size: cover;
+    opacity: 0.90;
+    
+}
+
+header nav.sticky{
+    padding: 5px 100px;
+    overflow: auto;
+    background: #fff;
+    color: black;
+}
+
+header.sticky .logos h2,
+header.sticky ul li a{
+    color: black;
+}
+
+header.sticky nav{
+    background-color: cyan;
+    opacity: 1;
+    text-transform: uppercase;
+}
+
+.banner span{
+    color: gold;
+}
+
+.btn_su a{
+    text-decoration: none;
+    color: #000;
+}
+
+.btn_su a:hover{
+    color: #fff;
+}
+
+.btn_su:hover{
+    background: greenyellow;
+}
+
+.btn_s a{
+    text-decoration: none;
+    color: #000;
+}
+
+.logos h2{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    transition: 0.6s;
+}
+.logos h2:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+.{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.text_s span{
+    padding-top: 100px;
+    color: yellow;
+    font-size: 25px;
+}
+.text_s h1{
+    font-size: 40px;
+    margin-top: 300px;
+}
+
+.text_s h1 span{
+    color: red;
+    font-size: 30px;
+}
+
+.btn_s{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid black;
+    padding: 14px 50px;
+    border-radius: 6px;
+    background-color: #fff;
+    text-decoration: none;
+    color: black;
+    transition: background 0.5s;
+}
+.btn_s:hover{
+    background: red;
+    color: white;
+    text-decoration: none;
+}
+
+.container_s{
+    position: relative;
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+   
+}
+.container_s .card_s{
+       position: relative;
+       max-width: 300px;
+       height: 215px;
+       background: white;
+       margin: 30px 25px;
+       padding: 20px 15px;
+       display: flex;
+       flex-direction: column;
+       box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+       transition: 0.3s ease-in-out;
+}
+.container_s .card_s:hover{
+      height: 420px;
+}
+.container_s .card_s .imgbx{
+       position: relative;
+       height: 260px;
+       width: 260px;
+       top: -60px;
+       left: 5px;
+       /* box-shadow: 0 5px 20px rgba(0, 0,0, 0.2); */
+       z-index: 1;
+}
+.container_s .card_s .imgbx img{
+       max-width: 100%;
+       border-radius: 4px;
+}
+.container_s .card_s .content{
+       position: relative;
+       margin-top: -140px;
+       padding: 10px 15px;
+       text-align: center;
+       color: #111;
+       visibility: hidden;
+       opacity: 0;
+       transition: 0.3s ease-in-out;
+       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content_s h2{
+      color: brown;
+      padding-bottom: 16px;
+}
+.content_s p{
+       font-size:18px;
+}
+.container_s .card_s:hover .content_s{
+       visibility: visible;
+       opacity: 1;
+       margin-top: -40px;
+       transition-delay: 0.3s;
+   
+}
+.cardimg{
+       height: 164.66px;
+}
+.headcontainer_s{
+       display: flex;
+       justify-content: center;
+       text-align: center;
+}
+.p_s{
+    color: black;
+}
+.copyright_s{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.copyright_s i{
+    color: gold;
+}
+
+.button_s {
+    display: inline-block;
+    padding: 20px 20px;
+    background-color: black;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 45vw;
+    margin-top: 120px;
+    transition: background-color 0.3s ease;
+}
+  
+.button_s:hover {
+    background-color: white;
+    color: black
+}
+
+.space_s{
+    color: black;
+    margin-top: 400px;
+
+}
+
+.btn_su{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid black;
+    padding: 14px 50px;
+    border-radius: 6px;
+    background-color: black;
+    text-decoration: none;
+    color: black;
+    transition: background 0.5s;
+}
+.btn_su:hover{
+    background: black;
+    color: white;
+}
+  
+
+/* ------------for small screen--------- */
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images/mobile.webp);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: navy;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width:  200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .copyrights{
+        font-size: 14px;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+}

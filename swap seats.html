@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b53fbd1973.js" crossorigin="anonymous"></script>
+    <title>SWAP SEATS</title>
+</head>
+
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+    
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .bg_su{
+        background: url(images/stad.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .container_su{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: "poppins";
+        backdrop-filter: blur(3px);
+    }
+
+    .container_su .box_su{
+        position: relative;
+        width: 400px;
+        height: 450px;
+        background: transparent;
+        box-shadow: 0 0 30px rgba(0,0,0,0.9);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box_su .h2s{
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .container_su .box_su .inputbox_su{
+        position: relative;
+        margin: 15px 0;
+        width: 310px;
+        border-bottom: 2px solid #fff;
+    }
+    .box_su select{
+        width: 100%;
+        height: 57px;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 20px;
+        padding-left: 30px;
+
+    }
+    .box_su button{
+        width: 100%;
+        height: 50px;
+        border-radius: 8px;
+        background: red;
+        color: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        box-shadow: 0 0 20px rgba(0,0,0,0.6);
+        margin-top: 10px;
+    }
+
+    .swap_su{
+        font-size: 40px;
+        position: relative;
+        cursor: pointer;
+        color: #fff;
+        padding: 10px;
+        transition: 0.3s;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+                
+    }
+
+    .swap-rotation{
+        transform: rotate(180deg);
+    }
+
+
+    .tick{
+        position: absolute;
+        top: 15px;
+        font-size: 20px;
+        color: #fff;
+    }
+    .ex_su{
+        color: #fff;
+        font-size: 50px;
+        position: relative;
+        top: 50%;
+        justify-content: center;
+        align-items: center;
+        transform: translate(40%,0%);
+    }
+
+    .option_su{
+        color: #000;
+        font-family: "poppins";
+    }
+
+</style>
+
+<body>
+    <div class="bg_su">
+        <div class="container_su">
+            <div class="box_su">
+                <div class="box-value_su">
+                    <div class="ex_su">
+                        <i class="fa-solid fa-cash-register"></i>
+                    </div>
+                    <div class="h2s">
+                        <h2>
+                            Ticket Exchange
+                        </h2>
+                    </div>
+                    <div class="inputbox_su">
+                        <div class="tick">
+                            <i class="fa-solid fa-ticket"></i>
+                        </div>
+                        <select name="" id="first-ticket">
+                            <div class="option_su">
+                                <option value="ticket 01">ticket 01</option>
+                                <option value="ticket 02">ticket 02</option>
+                                <option value="ticket 03">ticket 03</option>
+                                <option value="ticket 04">ticket 04</option>
+                                <option value="ticket 05">ticket 05</option>
+                                <option value="ticket 06">ticket 06</option>
+                                <option value="ticket 07">ticket 07</option>
+                                <option value="ticket 08">ticket 08</option>
+                                <option value="ticket 09">ticket 09</option>
+                                <option value="ticket 10">ticket 10</option>
+                                <option value="ticket 11">ticket 11</option>
+                                <option value="ticket 12">ticket 12</option>
+                                <option value="ticket 13">ticket 13</option>
+                                <option value="ticket 14">ticket 14</option>
+                                <option value="ticket 15">ticket 15</option>
+                                <option value="ticket 16">ticket 16</option>
+                                <option value="ticket 17">ticket 17</option>
+                                <option value="ticket 18">ticket 18</option>
+                                <option value="ticket 19">ticket 19</option>
+                                <option value="ticket 20">ticket 20</option>
+                                <option value="ticket 21">ticket 21</option>
+                                <option value="ticket 22">ticket 22</option>
+                                <option value="ticket 23">ticket 23</option>
+                                <option value="ticket 24">ticket 24</option>
+                                <option value="ticket 25">ticket 25</option>
+                                <option value="ticket 26">ticket 26</option>
+                                <option value="ticket 27">ticket 27</option>
+                                <option value="ticket 28">ticket 28</option>
+                                <option value="ticket 29">ticket 29</option>
+                                <option value="ticket 30">ticket 30</option>
+                                <option value="ticket 31">ticket 31</option>
+                                <option value="ticket 32">ticket 32</option>
+                                <option value="ticket 33">ticket 33</option>
+                                <option value="ticket 34">ticket 34</option>
+                                <option value="ticket 35">ticket 35</option>
+                                <option value="ticket 36">ticket 36</option>
+                                <option value="ticket 37">ticket 37</option>
+                                <option value="ticket 38">ticket 38</option>
+                                <option value="ticket 39">ticket 39</option>
+                                <option value="ticket 40">ticket 40</option>
+                                <option value="ticket 41">ticket 41</option>
+                                <option value="ticket 42">ticket 42</option>
+                                <option value="ticket 43">ticket 43</option>
+                                <option value="ticket 44">ticket 44</option>
+                                <option value="ticket 45">ticket 45</option>
+                                <option value="ticket 46">ticket 46</option>
+                                <option value="ticket 47">ticket 47</option>
+                                <option value="ticket 48">ticket 48</option>
+                                <option value="ticket 49">ticket 49</option>
+                                <option value="ticket 50">ticket 50</option>
+                                <option value="ticket 51">ticket 51</option>
+                                <option value="ticket 52">ticket 52</option>
+                                <option value="ticket 53">ticket 53</option>
+                                <option value="ticket 54">ticket 54</option>
+                                <option value="ticket 55">ticket 55</option>
+                                <option value="ticket 56">ticket 56</option>
+                                <option value="ticket 57">ticket 57</option>
+                                <option value="ticket 58">ticket 58</option>
+                                <option value="ticket 59">ticket 59</option>
+                                <option value="ticket 60">ticket 60</option>
+                            </div>
+                        </select>
+                    </div>
+                    <div class="swap_su">
+                        <i class="fa-solid fa-right-left"></i>
+                    </div>
+                    <div class="inputbox_su">
+                        <div class="tick">
+                            <i class="fa-solid fa-ticket"></i>
+                        </div>
+                        <select name="" id="second-ticket">
+                            <div class="option_su">
+                                <option value="ticket 01">ticket 01</option>
+                                <option value="ticket 02">ticket 02</option>
+                                <option value="ticket 03">ticket 03</option>
+                                <option value="ticket 04">ticket 04</option>
+                                <option value="ticket 05">ticket 05</option>
+                                <option value="ticket 06">ticket 06</option>
+                                <option value="ticket 07">ticket 07</option>
+                                <option value="ticket 08">ticket 08</option>
+                                <option value="ticket 09">ticket 09</option>
+                                <option value="ticket 10">ticket 10</option>
+                                <option value="ticket 11">ticket 11</option>
+                                <option value="ticket 12">ticket 12</option>
+                                <option value="ticket 13">ticket 13</option>
+                                <option value="ticket 14">ticket 14</option>
+                                <option value="ticket 15">ticket 15</option>
+                                <option value="ticket 16">ticket 16</option>
+                                <option value="ticket 17">ticket 17</option>
+                                <option value="ticket 18">ticket 18</option>
+                                <option value="ticket 19">ticket 19</option>
+                                <option value="ticket 20">ticket 20</option>
+                                <option value="ticket 21">ticket 21</option>
+                                <option value="ticket 22">ticket 22</option>
+                                <option value="ticket 23">ticket 23</option>
+                                <option value="ticket 24">ticket 24</option>
+                                <option value="ticket 25">ticket 25</option>
+                                <option value="ticket 26">ticket 26</option>
+                                <option value="ticket 27">ticket 27</option>
+                                <option value="ticket 28">ticket 28</option>
+                                <option value="ticket 29">ticket 29</option>
+                                <option value="ticket 30">ticket 30</option>
+                                <option value="ticket 31">ticket 31</option>
+                                <option value="ticket 32">ticket 32</option>
+                                <option value="ticket 33">ticket 33</option>
+                                <option value="ticket 34">ticket 34</option>
+                                <option value="ticket 35">ticket 35</option>
+                                <option value="ticket 36">ticket 36</option>
+                                <option value="ticket 37">ticket 37</option>
+                                <option value="ticket 38">ticket 38</option>
+                                <option value="ticket 39">ticket 39</option>
+                                <option value="ticket 40">ticket 40</option>
+                                <option value="ticket 41">ticket 41</option>
+                                <option value="ticket 42">ticket 42</option>
+                                <option value="ticket 43">ticket 43</option>
+                                <option value="ticket 44">ticket 44</option>
+                                <option value="ticket 45">ticket 45</option>
+                                <option value="ticket 46">ticket 46</option>
+                                <option value="ticket 47">ticket 47</option>
+                                <option value="ticket 48">ticket 48</option>
+                                <option value="ticket 49">ticket 49</option>
+                                <option value="ticket 50">ticket 50</option>
+                                <option value="ticket 51">ticket 51</option>
+                                <option value="ticket 52">ticket 52</option>
+                                <option value="ticket 53">ticket 53</option>
+                                <option value="ticket 54">ticket 54</option>
+                                <option value="ticket 55">ticket 55</option>
+                                <option value="ticket 56">ticket 56</option>
+                                <option value="ticket 57">ticket 57</option>
+                                <option value="ticket 58">ticket 58</option>
+                                <option value="ticket 59">ticket 59</option>
+                                <option value="ticket 60">ticket 60</option>
+                            </div>
+                        </select>
+                    </div>
+                    <button><a href="booked.html">SWAP TICKETS</a></button>
+    
+                </div>
+            </div>
+        </div>   
+    </div>
+</body>
+
+<script>
+    var swap=document.querySelector('.swap_su')
+
+    swap.addEventListener("click",()=>{
+        swap.classList.add('swap-rotation')
+        var firstticket=document.getElementById('first-ticket');
+        var secondticket=document.getElementById('second-ticket');
+        var value;
+        value=secondticket.value;
+        secondticket.value=firstticket.value;
+        firstticket.value=value;
+
+    })
+</script>
+
+</html>

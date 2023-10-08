@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="ticketbook.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="bg">
+        <div>
+            <div id="section1">
+                <div id="seat-booking">
+                    <div class="m-seats-bg">
+                        <div class="m-seating-section d-flex flex-row justify-content-center">
+                            <div>
+                                <div class="showcase d-flex flex-row justify-content-center">
+                                    <ul class="seat-show d-flex flex-row justify-content-center">
+                                        <li class="m-ele d-flex flex-row justify-content-center align-items-center">
+                                            <div class="seats-m-new"></div>
+                                            <small>N/A</small>
+                                        </li>
+                                        <li class="m-ele d-flex flex-row justify-content-center align-items-center">
+                                            <div class="seats-m-new m-selected"></div>
+                                            <small>Selected</small>
+                                        </li>
+                                        <li class="m-ele d-flex flex-row justify-content-center align-items-center">
+                                            <div class="seats-m-new m-occupied"></div>
+                                            <small>Occupied</small>
+                                        </li>
+                                    </ul>
+                                    <div class="section-container">
+                                        <label>Pick a section:</label>
+                                        <select id="sel-m-section">
+                                            <option value="35" class="seat-m-sect" data="North-East Stand">North-East
+                                                Stand ($35)</a></option>
+                                            <option value="35" class="seat-m-sect" data-section="North-West Stand">
+                                                North-West Stand ($35)</a></option>
+                                            <option value="50" class="seat-m-sect" data-section="West Stand">West Stand
+                                                ($50)</a></option>
+                                            <option value="50" class="seat-m-sect" data-section="East Stand">East Stand
+                                                ($50)</a></option>
+                                            <option value="110" class="seat-m-sect" data-section="Diamond">Diamond
+                                                Pavilion ($110)</a></option>
+                                            <option value="90" class="seat-m-sect" data-section="Platinum Pavilion">
+                                                Platinum Pavilion ($90)</a></option>
+                                            <option value="75" class="seat-m-sect" data-section="Gold Pavilion">Gold
+                                                Pavilion ($75)</a></option>
+                                            <option value="160" class="seat-m-sect" data-section="West VIP Suites">West
+                                                Suites ($160)</a></option>
+                                            <option value="200" class="seat-m-sect" data-section="Royal Suites">Royal
+                                                Suites ($200)</a></option>
+                                            <option value="250" class="seat-m-sect" data-section="Royal Lounge">Royal
+                                                Lounge ($250)</a></option>
+                                            <option value="160" class="seat-m-sect" data-section="East VIP Suites">East
+                                                VIP Suites ($160)</a></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div id="seats-section" class="m-seatsection">
+                                    <div class="d-flex flex-row justify-content-center align-items-center">
+                                        <div>
+                                            <div class="seats-m-header">
+                                                <h1 class="seats-m-header">Seat Bookings</h1>
+                                            </div>
+                                            <div class="all-stadium d-flex flex-row">
+                                                <div>
+                                                    <img class="m-stadiumImg" src="StadiumSection.jpeg">
+                                                </div>
+                                                <div id="seats" class="m-seats">
+                                                    <div class="m-header-1 d-flex flex-row justify-content-center">
+                                                        <h3 class="seats-m-header1">Stadium</h3>
+                                                    </div>
+                                                    <div class="d-flex flex-row justify-content-center">
+                                                        <div class="m-container">
+                                                            <div class="m-row" id="seat-number">
+                                                                <a href="javascript:void(0)" data-sno="01"
+                                                                    class="seats-M-size">01</a>
+                                                                <a href="javascript:void(0)" data-sno="02"
+                                                                    class="seats-M-size">02</a>
+                                                                <a href="javascript:void(0)" data-sno="03"
+                                                                    class="seats-M-size m-occupied">03</a>
+                                                                <a href="javascript:void(0)" data-sno="04"
+                                                                    class="seats-M-size m-occupied">04</a>
+                                                                <a href="javascript:void(0)" data-sno="05"
+                                                                    class="seats-M-size">05</a>
+                                                                <a href="javascript:void(0)" data-sno="06"
+                                                                    class="seats-M-size">06</a>
+                                                                <a href="javascript:void(0)" data-sno="07"
+                                                                    class="seats-M-size">07</a>
+                                                                <a href="javascript:void(0)" data-sno="08"
+                                                                    class="seats-M-size">08</a>
+                                                                <a href="javascript:void(0)" data-sno="09"
+                                                                    class="seats-M-size m-occupied">09</a>
+                                                                <a href="javascript:void(0)" data-sno="10"
+                                                                    class="seats-M-size">10</a>
+                                                            </div>
+                                                            <div class="m-row">
+                                                                <a href="javascript:void(0)" data-sno="11"
+                                                                    class="seats-M-size">11</a>
+                                                                <a href="javascript:void(0)" data-sno="12"
+                                                                    class="seats-M-size">12</a>
+                                                                <a href="javascript:void(0)" data-sno="13"
+                                                                    class="seats-M-size">13</a>
+                                                                <a href="javascript:void(0)" data-sno="14"
+                                                                    class="seats-M-size">14</a>
+                                                                <a href="javascript:void(0)" data-sno="15"
+                                                                    class="seats-M-size">15</a>
+                                                                <a href="javascript:void(0)" data-sno="16"
+                                                                    class="seats-M-size m-occupied">16</a>
+                                                                <a href="javascript:void(0)" data-sno="17"
+                                                                    class="seats-M-size">17</a>
+                                                                <a href="javascript:void(0)" data-sno="18"
+                                                                    class="seats-M-size">18</a>
+                                                                <a href="javascript:void(0)" data-sno="19"
+                                                                    class="seats-M-size">19</a>
+                                                                <a href="javascript:void(0)" data-sno="20"
+                                                                    class="seats-M-size m-occupied">20</a>
+                                                            </div>
+                                                            <div class="m-row">
+                                                                <a href="javascript:void(0)" data-sno="21"
+                                                                    class="seats-M-size m-occupied">21</a>
+                                                                <a href="javascript:void(0)" data-sno="22"
+                                                                    class="seats-M-size m-occupied">22</a>
+                                                                <a href="javascript:void(0)" data-sno="23"
+                                                                    class="seats-M-size">23</a>
+                                                                <a href="javascript:void(0)" data-sno="24"
+                                                                    class="seats-M-size">24</a>
+                                                                <a href="javascript:void(0)" data-sno="25"
+                                                                    class="seats-M-size">25</a>
+                                                                <a href="javascript:void(0)" data-sno="26"
+                                                                    class="seats-M-size">26</a>
+                                                                <a href="javascript:void(0)" data-sno="27"
+                                                                    class="seats-M-size">27</a>
+                                                                <a href="javascript:void(0)" data-sno="28"
+                                                                    class="seats-M-size">28</a>
+                                                                <a href="javascript:void(0)" data-sno="29"
+                                                                    class="seats-M-size m-occupied">29</a>
+                                                                <a href="javascript:void(0)" data-sno="30"
+                                                                    class="seats-M-size">30</a>
+                                                            </div>
+                                                            <div class="m-row">
+                                                                <a href="javascript:void(0)" data-sno="31"
+                                                                    class="seats-M-size">31</a>
+                                                                <a href="javascript:void(0)" data-sno="32"
+                                                                    class="seats-M-size">32</a>
+                                                                <a href="javascript:void(0)" data-sno="33"
+                                                                    class="seats-M-size">33</a>
+                                                                <a href="javascript:void(0)" data-sno="34"
+                                                                    class="seats-M-size">34</a>
+                                                                <a href="javascript:void(0)" data-sno="35"
+                                                                    class="seats-M-size">35</a>
+                                                                <a href="javascript:void(0)" data-sno="36"
+                                                                    class="seats-M-size m-occupied">36</a>
+                                                                <a href="javascript:void(0)" data-sno="37"
+                                                                    class="seats-M-size">37</a>
+                                                                <a href="javascript:void(0)" data-sno="38"
+                                                                    class="seats-M-size m-occupied">38</a>
+                                                                <a href="javascript:void(0)" data-sno="39"
+                                                                    class="seats-M-size m-occupied">39</a>
+                                                                <a href="javascript:void(0)" data-sno="40"
+                                                                    class="seats-M-size">40</a>
+                                                            </div>
+                                                            <div class="m-row">
+                                                                <a href="javascript:void(0)" data-sno="41"
+                                                                    class="seats-M-size">41</a>
+                                                                <a href="javascript:void(0)" data-sno="42"
+                                                                    class="seats-M-size">42</a>
+                                                                <a href="javascript:void(0)" data-sno="43"
+                                                                    class="seats-M-size m-occupied">43</a>
+                                                                <a href="javascript:void(0)" data-sno="44"
+                                                                    class="seats-M-size m-occupied">44</a>
+                                                                <a href="javascript:void(0)" data-sno="45"
+                                                                    class="seats-M-size m-occupied">45</a>
+                                                                <a href="javascript:void(0)" data-sno="46"
+                                                                    class="seats-M-size m-occupied">46</a>
+                                                                <a href="javascript:void(0)" data-sno="47"
+                                                                    class="seats-M-size">47</a>
+                                                                <a href="javascript:void(0)" data-sno="48"
+                                                                    class="seats-M-size">48</a>
+                                                                <a href="javascript:void(0)" data-sno="49"
+                                                                    class="seats-M-size">49</a>
+                                                                <a href="javascript:void(0)" data-sno="50"
+                                                                    class="seats-M-size">50</a>
+                                                            </div>
+                                                            <div class="m-row">
+                                                                <a href="javascript:void(0)" data-sno="51"
+                                                                    class="seats-M-size">51</a>
+                                                                <a href="javascript:void(0)" data-sno="52"
+                                                                    class="seats-M-size">52</a>
+                                                                <a href="javascript:void(0)" data-sno="53"
+                                                                    class="seats-M-size m-occupied">53</a>
+                                                                <a href="javascript:void(0)" data-sno="54"
+                                                                    class="seats-M-size">54</a>
+                                                                <a href="javascript:void(0)" data-sno="55"
+                                                                    class="seats-M-size m-occupied">55</a>
+                                                                <a href="javascript:void(0)" data-sno="56"
+                                                                    class="seats-M-size m-occupied">56</a>
+                                                                <a href="javascript:void(0)" data-sno="57"
+                                                                    class="seats-M-size">57</a>
+                                                                <a href="javascript:void(0)" data-sno="58"
+                                                                    class="seats-M-size m-occupied">58</a>
+                                                                <a href="javascript:void(0)" data-sno="59"
+                                                                    class="seats-M-size">59</a>
+                                                                <a href="javascript:void(0)" data-sno="60"
+                                                                    class="seats-M-size">60</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="m-booking-details">
+                                                        <ul class="bd-M-details d-flex flex-row">
+                                                            <div class="details-m-left">
+                                                                <li>Match</li>
+                                                                <li>Time</li>
+                                                                <li>Tickets</li>
+                                                                <li>Total</li>
+                                                            </div>
+                                                            <div class="details-m-right">
+                                                                <li>:jsinput</li>
+                                                                <li>:jsinput</li>
+                                                                <li>:<span id="m-count">0</span></li>
+                                                                <li>:$<span id="m-total">0</span></li>
+                                                            </div>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-final d-flex flex-row justify-content-end">
+                            <div class="m-confirm d-flex flex-row">
+                                <button class="btn m-btn btn-light">Cancel</button>
+                                <button class="btn m-btn btn-primary m-formset" onclick="display('section2')">Fill
+                                    Info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="section2">
+                <div id="seatnoform">
+                </div>
+                <div class="m-final d-flex flex-row justify-content-end">
+                    <div class="m-confirm d-flex flex-row">
+                        <button class="btn m-btn btn-light" onclick="display('section1')">Cancel</button>
+                        <button class="btn m-btn btn-primary m-pay" onclick="display('section3')">Show Tickets</button>
+                    </div>
+                </div>
+            </div>
+            <div id="section3">
+                <div id="ticketsprint">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript"
+        src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    <script src="ticketsbook.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,460 @@
+.m-seats-bg{
+    background: url("SeatBG.jpeg");
+    background-size:cover;
+    height: 100vh;
+    padding-top: 9vh;
+}
+.showcase{
+    position: relative;
+    flex-wrap: wrap;
+    color: #fff;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.625);
+    padding: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+.m-seatsection
+{
+    background-color:rgba(0, 0, 0, 0.625);
+    padding: 2vw;
+    border-radius: 12px;
+    
+}
+.seats-M-size{
+    background-color: gray;
+    border-style: solid;
+    width: 19.5px;
+    height: 21px;
+    border-width: 0px;
+    margin:5px;
+    display: inline-block;
+    font-size: 10px;
+    line-height: 25px;
+    font-weight: 400;
+    background: #fff;
+    vertical-align: top;
+    border:1px solid #1ea83c;
+    width: 25px;
+    height: 25px;
+    border-radius: 2px;
+    color: #1ea83c;
+    text-align: center;
+    text-decoration: none;
+}
+
+.m-ele{
+    width: 90px;
+    margin-right:12px;
+}
+.seats-m-new{
+    background-color: gray;
+    border-style: solid;
+    width: 19.5px;
+    height: 21px;
+    border-width: 0px;
+    /* border-top-left-radius: 12px;
+    border-top-right-radius: 12px; */
+    margin:5px;
+    display: inline-block;
+    font-size: 10px;
+    line-height: 25px;
+    font-weight: 400;
+    background: #fff;
+    vertical-align: top;
+    border:1px solid #1ea83c;
+    width: 25px;
+    height: 25px;
+    border-radius: 2px;
+    color: #1ea83c;
+    text-align: center;
+    text-decoration: none;
+}
+.seats-M-size:not(.m-occupied):hover{
+    cursor: pointer;
+    background-color: green;
+    transform: scale(1.35);
+}
+.seats-M-size.m-selected{
+    background-color: #1fdaff;
+    color:white
+}
+.seats-M-size.m-occupied{
+    background-color:#9aa5b1!important;
+    border:none;
+    color:white;
+}
+.seats-M-size.m-occupied:hover{
+    text-decoration: none;
+    color: #1ea83c;
+}
+.seats-m-new.m-selected{
+    background-color: #1fdaff;
+}
+.seats-m-new.m-occupied{
+    background-color: whitesmoke;
+    width: 25px;
+}
+.seats-M-size:nth-of-type(3){
+    margin-right: 20px;
+}
+.seats-M-size:nth-last-of-type(3){
+    margin-left: 20px;
+}
+
+.m-seats{
+    position: relative;
+    padding: 1.5vw;
+}
+.seats-m-header{
+    text-align: center;
+    font-weight: 900;
+    font-family:'Gill Sans';
+    color: #ff722e;
+}
+.seats-m-header1{
+    position: relative;
+    text-align: center;
+    font-weight: 900;
+    font-family:'Gill Sans';
+    color: #fff;
+    background-color: green;
+    height: 35px;
+    width: 330px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fff;
+    border-radius: 45px;
+}
+
+.m-booking-details{
+    position: relative;
+    padding: 1vw;
+    height: 50vh;
+    padding-top: 15vh;
+    border-style: solid;
+    border-width: 0px;
+    border-left-width: 2px;
+}
+.bd-M-details{
+    font-size: 18px;
+    list-style-type: none;
+}
+.details-m-right{
+    color: #9aa5b1;
+    font-style: italic;
+    font-weight: 900;
+}
+.details-m-left{
+    font-style: oblique;
+    font-weight: bold;
+    color: #b250d2;
+}
+.m-final{
+    margin-top: 2vh;
+}
+.m-confirm{
+    margin-right: 10vw;
+    padding-right: 2.5vw;
+    color: #fff;
+}
+.m-btn{
+    width: 12vw;
+    border-radius: 45px;
+    margin-left: 3vw;
+}
+.m-row{
+    display: flex;
+    justify-content: center;
+}
+.section-container {
+    position: relative;
+    margin: 20px 0;
+  }
+  
+.section-container select {
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.seat-show{
+    position: relative;
+    margin: 20px 0;
+    padding-right: 16px;
+}
+.m-stadiumImg{
+    margin-top: 12px;
+    max-height: 40vh;
+    position: relative;
+}
+.seat-section{
+    position: relative;
+}
+.all-stadium{
+    position: relative;
+    flex-wrap: wrap;
+}
+.m-header-1 {
+    margin-bottom: 20px;
+}
+
+.o-container{
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-width: 2px;
+    max-width: 380px;
+    margin: 22px;
+    margin-right: 0px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.o-card {
+    background: linear-gradient(to bottom,
+    #3dcee8 0%,
+    #3dcee8 26%,
+    #ecedef 26%,
+    #ecedef 100%);
+height: 11.5em;
+float: left;
+position: relative;
+padding: 1em;
+margin-top: 0px;
+}
+.o-card-left{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 260px;
+}
+
+.o-card-right{
+    width: 112px;
+    border-left: 0.18em dashed #fff;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.o-card-right::before,
+.o-card-right::after{
+    content:"";
+    position: absolute;
+    display: block;
+    width: 0.9em;
+    height: 0.9em;
+    background: #fff;
+    border-radius: 50%;
+    left: -0.5em;
+}
+
+.o-card-right::before{
+    top: -0.4em;
+}
+
+.o-card-right::after{
+    bottom: -0.4em;
+}
+
+.o-header{
+    font-size: 1.1em;
+    margin-top: 0;
+}
+
+.o-header span{
+    font-weight: normal;
+}
+
+.o-title,
+.o-name,
+.o-id,
+.o-ticno,
+.o-section,
+.o-seat,
+.o-time 
+{
+     text-transform: uppercase;
+     font-weight: normal;
+}
+.o-title h2,
+.o-name h2,
+.o-id h2,
+.o-ticno h2,
+.o-seat h2,
+.o-time h2 
+{
+    font-size: 10px;
+    color: #525252;
+    margin: 0;
+    text-align: start;
+}
+
+.o-title span,
+.o-name span,
+.o-ticno span,
+.o-id span,
+.o-section span,
+.o-seat span,
+.o-time span
+{
+    font-size: 10px;
+    color: #a2aeae;
+}
+.o-section h2
+{
+    font-size: 10px;
+    color: #525252;
+    margin: 0;
+    text-align: start;
+}
+.o-title 
+{
+    margin-top: 18px;
+}
+
+
+
+.o-ticno
+{
+     margin: 3px 0 0 0;
+}
+.o-section
+{
+    margin-top: 6px;
+}
+
+.o-id,
+.o-name,
+.o-time,
+.o-name,
+.o-seat
+{
+    margin: 3px 0 0 1em;
+}
+
+.o-seat,
+.o-section,
+.o-time
+{
+    float: left;
+}
+
+.o-id,
+.o-ticno,
+.o-name{
+    float: left;
+}
+
+
+.o-eye
+{
+    position: relative;
+    width: 2em;
+    height: 1.5em;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 1em/0.6em;
+    z-index: 1;
+}
+
+.o-eye::before,
+.o-eye::after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.o-eye::before
+{
+    width: 1em;
+    background: #3dcee8;
+    height: 1em;
+    z-index: 2;
+    left: 8px;
+    top: 4px;
+}
+
+.o-eye::after 
+{
+     width: 0.5em;
+     height: 0.5em;
+     background: #fff;
+     z-index: 3;
+     left: 12px;
+     top: 8px;
+}
+
+.o-number,
+.o-section1
+{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.o-number h3
+{
+    color: #3dcee8;
+    margin-top: 18px;
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+.o-section1 h3 
+{
+    color: #3dcee8;
+    margin-top: 18px;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+.o-number span,
+.o-section1 span
+{
+    display: block;
+    color: #a2aeae;
+    font-size: 14px;
+}
+.ticketsprint
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.formprint
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: #01050e;
+}
+.fo-container
+{
+    position: relative;
+    width: 900px;
+    border-radius: 6px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 15px;
+    max-height: fit-content;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    margin: 17.5px;
+}
+.fo-formdisplay
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 320px;
+}

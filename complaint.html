@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="complaint.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" >
+            <div class="head">
+            <h2>Any Issue</h2>
+            </div>
+            <div class="content">
+                
+                <div class="input-box">
+                    <label for="name">Your Name</label>
+                    <input type="text" placeholder="Enter your name" name="name" required>
+                </div>
+
+                <div class="input-box">
+                <label for="fan-id">Fan Id</label>
+                <input type="text" placeholder="Enter the Fan-Id" name="fan-id" required>
+                </div>
+
+                <div class="input-box">
+                <label for="E-mail">E-mail address</label>
+                <input type="email" placeholder="Enter your E-mail address" name="E-mail" required>
+                </div>
+
+                <div class="input-box">
+                <label for="Phone">Phone number</label>
+                <input type="number" placeholder="Enter your Phone number" name="phone" required>
+                </div>
+                
+                <div class="input-box">
+                <label for="seat_no">Offender Seat number</label>
+                <input type="text" placeholder="Enter the seat number of offender" name="seat_no" required>
+                </div>
+                
+                <div class="input-box">
+                <label for="issue">Issue Faced</label>
+                <input type="text" placeholder="Describe the issue faced" name="issue" required>
+                </div>
+            </div>
+            </form>
+            
+                <div class="submit">
+                <div class="button-container">
+                    <form>
+                    <button type="submit">
+                       Register Issue 
+                    </button>
+                    </form>
+                </div>
+                </div>
+    </div>
+
+<script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw09KaWWmSqdmwuJe9_U0c2cRCjqMQj-xZWJgmIIshKCyg3zO3ALqhC8D2pVNMzPFheOA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = " Message Sent Successfully :) "
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+</script>
+
+</body>
+
+</html>

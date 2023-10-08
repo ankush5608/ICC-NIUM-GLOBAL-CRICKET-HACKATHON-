@@ -1,0 +1,185 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/b53fbd1973.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>Dev.JS</h2>
+            </div>
+            <ul>
+                <li><a href="#" class="home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="book1.html">Book Tickets</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="sign_in.html">sign-in</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner"></section>
+    <!-- <div class="btn_s">Book Now</div> -->
+    <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky",window.scrollY > 0);
+        })
+    </script>
+<!-- --------------about---------------- -->   
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Hackathon-logo.webp" alt="AI">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Us</h1>
+                    <p>We the team dev.js are making this website for ICC to improve the Stadium experience for the fans.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('TEAM MEMBERS')">TEAM MEMBERS</p>
+                        <p class="tab-links"  onclick="opentab('Education')">Education</p>
+                        <p class="tab-links"  onclick="opentab('Skills')">Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="TEAM MEMBERS">
+                        <ul>
+                            <li><span><a href=""></a> Omkar Rajesh</span></li>
+                            <li><span><a href=""></a>Ankush Sirvi</span></li>
+                            <li><span><a href=""></a> Suprith Shettigar</span></li>
+                            <li><span><a href=""></a>Meshank Bansal</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Studying in DAYANADA SAGAR COLLEGE OF ENGINEERING.</span></li>
+                            <li><span>BE in Artificial inteligence and Machine learning</span></li>
+                            <li><span>2st year</span> <br> 3rd semester </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Skills">
+                        <ul>
+                            <li><span>Web development</span>learning html,css,bootstrap,Java-Script</li>
+                            <li><span>Event Management</span>We have volunteered some events so we have basic ideas how to organise a event.</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">Our Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-id-card"></i>
+                    <h2>Customer profile</h2>
+                    <p>
+                        Checkout your profile.
+                    </p>
+                    <a href="userprofile.html" class="anclink">Go To Customer profile</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-flag"></i>
+                    <h2>Queries</h2>
+                    <p>If there is a problem your facing you can tell your issue here and if you want report a incident on misconduct.</p>
+                    <a href="chadbot.html" class="anclink">Go to the Queries site...</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-ticket"></i>
+                    <h2>Ticket Booking</h2>
+                    <p>
+                        booking tickets through website by seat number.
+                    </p>
+                    <a href="book1.html" class="anclink">Go To ticketbooking site...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------contact------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Us</h1>
+                    <p> <i class="fa-solid fa-envelopes-bulk"></i>Dev.Js@gmail.com</p>
+                    <p> <i class="fa-solid fa-square-phone"></i>+918955242466</p>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/Coblt121"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://github.com/Cobalt9000"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://in.linkedin.com/in/suprith-shettigar-81b9a1229"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message To Our Team."></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <div class="copyright">
+                <p> <i class="fa-brands fa-galactic-senate"></i> Copyright @Suprith shettigar. Made by the Team Dev.js. <i class="fa-brands fa-galactic-senate"></i> </p>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyaSSA3hYcnJOGw38gx1TGfLqfWbCv5ZL26XiXBYZHrki4RLPEdnlAdrZZvXy5bmg_1LA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = " Message Sent Successfully :) "
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
